@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadoComponent implements OnInit {
   public titulo= 'Titulo del componente creado';
-  constructor() { }
+  name: string;
+  
+  constructor() { 
+  	this.name='Felipe'}
 
   ngOnInit() {
   }
