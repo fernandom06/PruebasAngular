@@ -1,3 +1,5 @@
 <ul>
-	<li *ngFor="let ejemplar of names">Adios {{ejemplar}}</li>
+	<li *ngFor="let nombreIndividual of names">
+		<app-empleado [name]="nombreIndividual"></app-empleado>
+	</li>
 </ul>

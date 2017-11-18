@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-empleado',
@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./empleado.component.css']
 })
 export class EmpleadoComponent implements OnInit {
-  public titulo= 'Titulo del componente creado';
-  name: string;
+  @Input() name: string;
   
-  constructor() { 
-  	this.name='Felipe'}
+  constructor() {}
 
   ngOnInit() {
   }
